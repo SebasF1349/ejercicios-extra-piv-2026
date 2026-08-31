@@ -1,20 +1,22 @@
 // Dadas las siguientes dos clases, realizar las siguientes tareas:
-// 1. Crear una clase SmartDevice y hacer que SmartTV y SmartSpeaker hereden de la misma.
-//      SmartDevice debe ser abstracta e implementar todos las propiedades y métodos necesarios
-// 2. Agregar todos los setters y getters que falten
-// 3. Agregar la posibilidad de mutear y desmutear un dispositivo
-// 4. Controlar que el volumen esté entre 0 y 100
-// 5. Agregar una clase SmartLight que herede de SmartDevice
-// 6. SmartLight debe poder cambiar el brillo y controlar sus límites
-// 7. Crear una clase SmartDeviceManager que con un arreglo de SmartDevices realice las siguientes operaciones:
-//      a. Agregar y quitar dispositivos, evitando duplicados
-//      b. Apagar y prender todos los dispositivos
-//      c. Verificar si todos los dispositivos están apagado
-//      d. Verificar si algún dispositivo está muteado
-//      e. Verificar si dos dispositivos son del mismo tipo
-//      f. Obtener todos los dispositivos prendidos
-//      g. Encontrar un dispositivo en particular por id
-//      h. Obtener el nombre de todos los dispositivos
+// 1. Crear una clase abstracta SmartDevice y hacer que SmartTV y SmartSpeaker hereden de ella.
+//    SmartDevice debe implementar todas las propiedades y métodos necesarios.
+// 2. Agregar todos los getters y setters que falten.
+// 3. Agregar la posibilidad de mutear y desmutear un dispositivo.
+// 4. Crear una clase SmartLight que herede de SmartDevice.
+// 5. SmartLight debe poder cambiar el brillo.
+// 6. Agregar en SmartDevice un método para controlar que un valor esté entre 0 y 100,
+//    y utilizarlo para ajustar el volumen y el brillo según corresponda.
+// 7. Validar que las acciones del dispositivo solo sean posibles de ejecutar si este está encendido.
+// 8. Crear una clase SmartDeviceManager que administre un arreglo de SmartDevices y realice las siguientes operaciones:
+//      a. Agregar y quitar dispositivos, evitando duplicados.
+//      b. Apagar y encender todos los dispositivos.
+//      c. Verificar si todos los dispositivos están apagados.
+//      d. Verificar si algún dispositivo está muteado.
+//      e. Verificar si dos dispositivos son del mismo tipo.
+//      f. Obtener todos los dispositivos encendidos.
+//      g. Encontrar un dispositivo en particular por su ID.
+//      h. Obtener el nombre de todos los dispositivos.
 
 class SmartTV {
     id: string;
